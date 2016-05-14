@@ -1,9 +1,30 @@
-h1 {
-	color: red;
+/*h1 {*/
+/*	/*color: red;
 	text-align: center;
 	font: arial;
+}*/
+h2 {text-align: center;
 }
 .handwriting {
 	font-family: 'Poiret One', cursive;
 	font-size: 48px;
 }
+.everythingToTheLeft > *{
+	float:left;
+	margin-right:5px;
+}
+.clearfix {
+    *zoom:1 /* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* end clearfix*/
