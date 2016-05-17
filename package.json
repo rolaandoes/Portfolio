@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Rolando's web portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "body-parser": "^1.15.1",
+    "mongoose": "^4.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolaandoes/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "rolando"
+  ],
+  "author": "Rolando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolaandoes/Portfolio/issues"
+  },
+  "homepage": "https://github.com/rolaandoes/Portfolio#readme"
+}
