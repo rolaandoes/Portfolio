@@ -5,14 +5,15 @@ var express = require('express'),
 
   var Contact = require('./models/contact.js');
   //connect to db
-  mongoose.connect(
-    process.env.MONGOLAB_URI ||
-    process.env.MONGOHQ_URL || 
-    'mongodb://localhost/contact');
+  // mongoose.connect(
+  //   process.env.MONGOLAB_URI ||
+  //   process.env.MONGOHQ_URL || 
+  //   'mongodb://localhost/contact');
 
-  //bodyParser 
+  //bodyParser middleware
   app.use(bodyParser.urlencoded({extended:true}));
   app.use(bodyParser.json());
+  app.use(express.static(__dirname + '/public'));
 
   //get contacts
   app.get('/api/contacts', function (req, res) {
@@ -38,7 +39,7 @@ var express = require('express'),
 app.use(express.static(__dirname + '/public'));
 
 //loads front page
-app.get('*', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/views/index.html')
 })
 //listen on port
