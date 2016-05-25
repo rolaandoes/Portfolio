@@ -15,25 +15,25 @@ var express = require('express'),
   app.use(bodyParser.json());
   app.use(express.static(__dirname + '/public'));
 
-  //get contacts
-  app.get('/api/contacts', function (req, res) {
-    Contact.find({}, function (err, contacts) {
-      res.json(contacts);
-    })
-  });
+  // //get contacts
+  // app.get('/api/contacts', function (req, res) {
+  //   Contact.find({}, function (err, contacts) {
+  //     res.json(contacts);
+  //   })
+  // });
 
-  //post contact
-  app.post('/api/contact', function (req, res) {
-    var newContact = new Contact({
-      fullName: req.body.fullName,
-      email: req.body.Email,
-      message: req.body.Message
-    });
-    newContact.save(function (err, SavedContact) {
-      res.json(SavedContact);
-      res.json(err);
-    })
-  });
+  // //post contact
+  // app.post('/api/contact', function (req, res) {
+  //   var newContact = new Contact({
+  //     fullName: req.body.fullName,
+  //     email: req.body.Email,
+  //     message: req.body.Message
+  //   });
+  //   newContact.save(function (err, SavedContact) {
+  //     res.json(SavedContact);
+  //     res.json(err);
+  //   })
+  // });
 
 //checks where the front pages are at
 app.use(express.static(__dirname + '/public'));
