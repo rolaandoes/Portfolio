@@ -40,6 +40,6 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/views/index.html')
 })
 //listen on port
-app.listen(process.env.port || 3005, function() {
+app.listen(process.env.PORT || 3005, function() {
   console.log('server started on 3005');
 });
