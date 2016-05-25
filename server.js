@@ -35,9 +35,6 @@ var express = require('express'),
   //   })
   // });
 
-//checks where the front pages are at
-app.use(express.static(__dirname + '/public'));
-
 //loads front page
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/views/index.html')
