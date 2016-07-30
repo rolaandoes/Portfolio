@@ -31,16 +31,18 @@
 p {
 	word-wrap: break-word;
 }
-img.selfie{
+img{
 	position: relative-center;
+	float: left;
+	margin-right:30px;
 }
-h1.aboutme{
+h1{
 	text-align: center;
-	bottom: 100 px;
+	/*bottom: 100 px;*/
 }
-h1.projects{
-	/*do something with this! :D*/
-}
+/*h1.projects{
+	do something with this! :D
+}*/
 h2 {
 	text-align: center;
 }
